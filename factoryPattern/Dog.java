@@ -3,13 +3,10 @@ package factoryPattern;
 public class Dog implements Pet {
     private String breed;
 
-    public String getBreed() {
-        return breed;
-    }
+    
 
-    public void setBreed(String breed) {
-        this.breed = breed;
-    }
+    
+    
     @Override
     public String makeSound() {
         return "Aw, aw!";
@@ -19,4 +16,19 @@ public class Dog implements Pet {
     public String play() {
         return "Catching objects that you throw!";
     }
+
+    @Override
+    public void setBreed(String breed) {
+        this.breed = breed;
+    }
+    
+    public String getBreed() {
+        return breed;
+    }
+	@Override
+	public void setNoOfLives(Integer noOfLives) {
+		// TODO Auto-generated method stub
+		
+	}
+	
 }
